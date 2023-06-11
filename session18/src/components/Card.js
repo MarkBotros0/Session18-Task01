@@ -7,7 +7,7 @@ export default class Card extends Component {
         return (
             <div className='book col-2 justify-content-between d-flex flex-column'>
                 <div>
-                    <img className='img-fluid w-100 cover-image' src={`https://covers.openlibrary.org/b/ID/${book.cover_i}-M.jpg`} alt='book cover' />
+                    <img className='img-fluid w-100 cover-image' src={`https://covers.openlibrary.org/b/ID/${book.cover_i}-L.jpg`} alt='book cover' />
                 </div>
                 <div>
                     <h1 className='book-title'>{book.title}</h1>

@@ -16,7 +16,7 @@ export default class SearchPage extends Component {
             const response = await fetch(`http://openlibrary.org/search.json?q=${endpoint.replace(/\s/g, '-')}`)
             const jsonData = await response.json()
             this.setState({ data: jsonData.docs })
-            console.log(`http://openlibrary.org/search.json?q=${endpoint.replace(/\s/g, '-')}`)
+            console.log(`Success: http://openlibrary.org/search.json?q=${endpoint.replace(/\s/g, '-')}`)
         } catch (error) {
             console.log(error)
         }
@@ -45,7 +45,6 @@ export default class SearchPage extends Component {
         }
 
         const booksStored = JSON.parse(localStorage.getItem(e.target.id))
-        console.log(booksStored)
         Array.isArray(booksStored) ? localStorage.setItem(e.target.id, JSON.stringify([...booksStored, book])) : localStorage.setItem(e.target.id, JSON.stringify([book]))
     }
 
