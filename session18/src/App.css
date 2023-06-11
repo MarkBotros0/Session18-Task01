@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.back-btn {
+  font-size: 30px;
+  color: grey;
+}
+
+.input-group {
+  height: 60px;
+}
+
+.my-input {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.book-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.author-name {
+  font-size: 20px;
+  color: grey;
+  font-weight: 500;
+}
+
+.cover-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+.back-btn {
+  cursor: pointer;
+}
+
+.dropdown-btn {
+  background-color: #53a255;
+  color: white;
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+
+}
+
+.my-dropdown-container {
+  position: absolute;
+  right: 10px;
+  top: 360px;
+  border-radius: 50%;
+}
+.my-dropdown-button {
+  border-radius: 50%;
+  padding: 20px;
+  height: 60px;
+  width:60px
+}
+
+.book {
+  position: relative;
+}
+
+.options {
+  font-size: 18px;
+  font-weight: 400px;
+}
+
+.shelf-title {
+  font-size: 35px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  padding-bottom: 13px;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.596);
+}
+
+.myReads-container {
+  background-color: #53a255;
+  padding: 10px;
+}
+
+.myReads-title {
+  color: white;
+}
+
+.section {
+  padding: 15px;
+}
+
+.add-btn {
+  background-color: #53a255;
+  color: white;
+  padding: 25px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#drop{
+  position: absolute;
+  right: -30px;
+  top: 363px;
+  opacity: 0.01;
+  height: 60px;
+}
